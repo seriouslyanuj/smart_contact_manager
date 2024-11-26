@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title th:text="'Home Page'">Home</title>
+</head>
+<body>
+    <div id="content">
+        <div class="bg-gray-500 w-1/2 p-4 mx-auto mt-4">
+            <h1 th:text="${name}">Welcome To Homepage</h1>
+            <p class="text-green-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, unde illum! Quos esse voluptatem eos nihil obcaecati, saepe cum, nisi expedita nesciunt vitae accusantium sequi aliquid molestiae quasi! Voluptates, quaerat!</p>
+        </div>
+    </div>
+    <div id="script">
+        <script>
+            console.log("home page");
+        </script>
+    </div>
+</body>
+</html>

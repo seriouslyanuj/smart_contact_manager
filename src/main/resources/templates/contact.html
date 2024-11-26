@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title th:text="'Contact Page'">Contact Page</title>
+</head>
+<body>
+    <div id="content">
+        <div class="bg-gray-500 w-1/2 p-4 mx-auto mt-4">
+            <h1>Contact Us</h1>
+            <p class="text-green-700">
+                Feel free to reach out to us with any questions, concerns, or feedback!
+            </p>
+            <form action="/contact/submit" method="post" class="mt-4">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="border rounded p-2 w-full mb-2"/>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="border rounded p-2 w-full mb-2"/>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="border rounded p-2 w-full mb-2"></textarea>
+
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 p-2 rounded mt-2">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="script">
+        <script>
+            console.log("contact page");
+        </script>
+    </div>
+</body>
+</html>

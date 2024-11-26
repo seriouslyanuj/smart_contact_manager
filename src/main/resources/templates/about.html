@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <title th:text="'About Page'">about</title>
+</head>
+<body>
+    <div id="content">
+        <h1>This is the about page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam recusandae eius tenetur ducimus facilis officia et! Doloremque aliquid, assumenda, quam distinctio nesciunt facilis earum, suscipit esse dolorum veritatis reprehenderit.</p>
+    </div>
+    <div id="script">
+        <script>
+            console.log("about page");
+        </script>
+    </div>
+</body>
+</html>

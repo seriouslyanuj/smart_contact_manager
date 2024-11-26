@@ -6,9 +6,9 @@ import jakarta.persistence.Entity;
 public class Contacts {
 
     private String id;
-    // private String name;
-    // private String email;
-    // private String phoneNumber;
-    // private String address;
-    // private 
+    private String name;
+    private String email;
+    private String phoneNumber;
+    private String address;
+    private 
 }
